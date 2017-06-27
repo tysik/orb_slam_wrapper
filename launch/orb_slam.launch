@@ -1,0 +1,18 @@
+<!-- -->
+<launch>
+ 
+  <node pkg="orb_slam_wrp" type="orb_slam_node" name="orb_slam" output="screen">
+    <param name="active" value="true"/>
+    <param name="display_window" value="true"/>
+    <param name="width" value="792"/>
+    <param name="height" value="480"/>
+    <param name="sampling_time" value="0.1"/>
+
+    <param name="camera_file" value="$(find orb_slam_wrp)/resources/CameraParams.yaml"/>
+    <param name="vocabluary_file" value="$(env HOME)/ORB_SLAM2/Vocabulary/ORBvoc.txt"/>
+
+    <param name="parent_frame" value="world"/>
+    <param name="child_frame" value="orb_slam"/>
+  </node>
+
+</launch>

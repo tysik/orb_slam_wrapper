@@ -1,0 +1,20 @@
+image_width: 752
+image_height: 480
+camera_name: mini_ueye
+camera_matrix:
+  rows: 3
+  cols: 3
+  data: [734.6167945086859, 0, 394.5781431728514, 0, 736.1099719624231, 228.7387211220363, 0, 0, 1]
+distortion_model: plumb_bob
+distortion_coefficients:
+  rows: 1
+  cols: 5
+  data: [-0.3770191564284465, 0.1813730810754592, -0.000841844321366219, 0.0004799552644135683, 0]
+rectification_matrix:
+  rows: 3
+  cols: 3
+  data: [1, 0, 0, 0, 1, 0, 0, 0, 1]
+projection_matrix:
+  rows: 3
+  cols: 4
+  data: [656.8197021484375, 0, 398.7572051640454, 0, 0, 703.8260498046875, 227.0419759269826, 0, 0, 0, 1, 0]
